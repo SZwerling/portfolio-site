@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="css/styles.css" />
+      <title>Portfolio</title>
+   </head>
+   <body>
+    <div class="background"></div>
+      <div class="intro-left">
+         <div class="container-fluid full-height">
+            <div class="row text-center align-items-center full-height">
+               <div class="col">
+                  <img
+                     src="images/handsomeman.jpg"
+                     alt="user avatar"
+                     class="avatar"
+                  />
+                  <p class="display-6">Seth Zwerling</p>
+                  <p>Software Developer</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8 panel-right px-0">
+               <section class="quote">
+                  <figure>
+                     <blockquote class="blockquote">
+                        <p class="mt-3">“The only limit to our realiztion of tomorrow will be our doubts of today.”</p>
+                     </blockquote>
+                     <figcaption class="blockquote-footer">
+                        Franklin D. Roosevelt <cite title="Source Title">1945</cite>
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <section class="intro">
+                  <h1 class="display-5">Solutionarian</h1>
+                  <h2 class="display-6 mb-5">I'm a web developer that likes to solve problems and strengthen client relationships.</h2>
+                  <p>HTML JavaScript Bootstrap CSS Sass React Redux</p>
+               </section>
+               <section class="projects">
+                  <h2 class="display-6">My Projects:</h2>
+                  <div class="container-fluid">
+                     <div class="row gy-5">
+                        <div class="col-md-6">
+                           <a
+                              href="https://city-museum.vercel.app/home"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <img
+                                 src="images/museum.jpg"
+                                 alt="The City Museum"
+                                 class="img-fluid img-thumbnail"
+                              />
+                           </a>
+                           <figcaption class="figcaption">
+                              React & Redux
+                           </figcaption>
+                        </div>
+                        <div class="col-md-6">
+                           <a
+                              href="https://szwerling.github.io/ReactHotel/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <img
+                                 src="images/pool.jpg"
+                                 alt="React Hotel"
+                                 class="img-fluid img-thumbnail"
+                              />
+                           </a>
+                           <figcaption class="figcaption">
+                              React & Reactstrap
+                           </figcaption>
+                        </div>
+                        <div class="col-md-6">
+                           <a
+                              href="https://szwerling.github.io/BootMuseum/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <img
+                                 src="images/boots1.jpg"
+                                 alt="The Boot Museum"
+                                 class="img-fluid img-thumbnail"
+                              />
+                           </a>
+                           <figcaption class="figcaption">
+                              Bootstrap & JavaScript
+                           </figcaption>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+
+               <section class="contact">   
+                <form action="contact.php" method="post" enctype="multipart/form-data">
+                    <h2 class="display-6 mb-5">Contact me:</h2>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input
+                                    name="name"
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Name..."
+                                    required
+                                />
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label"
+                                    >Email address</label
+                                >
+                                <input
+                                    name="email"
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="name@example.com"
+                                    required
+                                />
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="message" class="form-label"
+                            >Message</label
+                            >
+                            <textarea
+                            name="message"
+                            class="form-control"
+                            id="message"
+                            rows="3"
+                            required
+                            ></textarea>
+                        </div>
+                    </div>
+                    <button
+                        type="submit"
+                        class="btn btn-outline-dark float-right"
+                    >
+                        Send
+                    </button>
+                </form>
+               </section>
+
+               <footer class="footer">
+                <div class="container-fluid text-center">
+                  <span class="text-muted">Made with Bootstrap 5</span>
+                </div>
+
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
