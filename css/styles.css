@@ -18,6 +18,14 @@ body {
     color: white;
   }
 
+  .title-main {
+    animation: moveInRight 1s ease-out;
+  }
+
+  .title-sub {
+    animation: moveInLeft 1s ease-out;
+  }
+
 @media (max-width: 768px){
     .intro-left{
         height: 35vh;
@@ -25,6 +33,33 @@ body {
         position: relative;
         width: 100%;
 
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
     }
 }
 
