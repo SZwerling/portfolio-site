@@ -26,6 +26,10 @@ body {
     animation: moveInLeft 1s ease-out;
   }
 
+  .parent {
+    backface-visibility: hidden;
+  }
+
 @media (max-width: 768px){
     .intro-left{
         height: 35vh;
