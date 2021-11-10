@@ -75,6 +75,7 @@ body {
 .avatar {
     width: 10rem;
     height: 10rem;
+    border: .05rem solid #E9E9E9;
     border-radius: 50%;
     margin: 1rem;
 }
