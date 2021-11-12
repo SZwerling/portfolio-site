@@ -110,6 +110,22 @@ section {
 
   .img-container {
     box-shadow: var(--shadow-dark);
+    transition: all 1s;
   }
+
+  /*1rem 1rem 1.7rem rgba(0, 0, 0, .7); initial state */
+  .project-link:hover { 
+    transform: translateY(-3px);  /* moves up on hover*/
+    /* offset-x | offset-y | blur-radius | *no spread-radius | color */
+    box-shadow: 1.5rem 1.5rem 2.2rem rgba(0, 0, 0, .65);  /*shadow grows on hover*/
+    transition: all .5s;    
+  }
+  .project-link:active {
+ /*when clicked*/
+        transform: translateY(-0.1rem);/*lower than hover, lower than initial state */
+        box-shadow: 0rem 0rem 1.2rem rgba(.5, .5, .5, 1);  /*shadow decreases from hover*/
+        transition: all .1s;
+  }
+
 
   /* clip-path: polygon(36% 0, 95% 0, 65% 100%, 18% 100%); */
