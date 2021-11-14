@@ -3,26 +3,22 @@
 --shadow-dark: 1rem 1rem 1.7rem rgba(0, 0, 0, .7);
 }
 
-body, html {
-    height: 100%;
-}
 
-body {
-    font-weight: 200;
-    font-size: 1.5rem;
-    color: #444;
-}
 
-.intro-left {
+
+
+.navbar {
     background: url(../images/sky.jpg);
     background-size: cover;
-    position: fixed;
-    left: 0;
-    width: 33.3333%;
-    height: 100%;
     color: white;
-  }
+    text-transform: uppercase;
+}
 
+.jumbotron {
+    background: url(../images/sky.jpg);
+    background-size: cover;
+    color: white;
+}
   .title-main {
     animation: moveInRight 1s ease-out;
   }
@@ -35,15 +31,27 @@ body {
     backface-visibility: hidden;
   }
 
-@media (max-width: 768px){
-    .intro-left{
-        height: 35vh;
-        margin-bottom: 10;
-        position: relative;
-        width: 100%;
 
-    }
+  
+  .nav-link {
+    color: #f4f4f4;
+    cursor: pointer; 
 }
+  
+.nav-link:hover,
+.nav-link:active {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+     }
+  
+
+    .intro-left{
+        background: url(../images/sky.jpg);
+        background-size: cover;
+        color: white;
+    }
+   
 
 @keyframes moveInLeft {
     0% {
@@ -88,10 +96,7 @@ body {
     float: right;
 }
 
-section {
-    margin: 5rem;
-    font-size: 1.2rem;
-}
+
 
 .footer {
     background-color: #fff;
@@ -129,3 +134,35 @@ section {
 
 
   /* clip-path: polygon(36% 0, 95% 0, 65% 100%, 18% 100%); */
+
+  @media (min-width: 768px){
+    .jumbotron {
+        padding-top: 3rem;
+        background: url(../images/sky.jpg);
+        background-size: cover;
+        position: fixed;
+        left: 0;
+        width: 33.3333%;
+        height: 100%;
+        color: white;
+    } 
+    .navbar {
+        position: fixed;
+        display: flex;
+        align-items: baseline;
+        width: 33.3333%;
+        height: 25%;
+        top: 25rem; 
+        background: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .links  {
+        flex-direction: column;
+    }
+    .nav-link:hover,
+    .nav-link:active {
+        color: white;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 100px;
+         }
+}
