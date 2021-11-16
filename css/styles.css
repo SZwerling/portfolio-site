@@ -22,6 +22,7 @@ body {
     background-color: var(--yellow-red);
 }
 
+
 .navbar {
     background: url(../images/sky.jpg);
     background-size: cover;
@@ -209,5 +210,4 @@ body {
     .links  {
         flex-direction: column;
     }
-    
 }
