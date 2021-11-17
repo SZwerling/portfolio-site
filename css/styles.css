@@ -44,6 +44,7 @@ body {
   }
 
   .parent {
+    font-family: 'Orbitron', sans-serif;
     backface-visibility: hidden;
     color: var(--yellow-red)
   }
@@ -208,6 +209,9 @@ body {
        
     }
     .links  {
+        display: flex;
         flex-direction: column;
     }
 }
+
+
