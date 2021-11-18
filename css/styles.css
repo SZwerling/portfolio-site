@@ -31,7 +31,7 @@ body {
 }
 
 .jumbotron {
-    background: url(../images/sky.jpg);
+    /* background: url(../images/sky.jpg); */
     background-size: cover;
     color: var(--yellow-red);
 }
@@ -190,7 +190,7 @@ body {
   @media (min-width: 768px){
     .jumbotron {
         padding-top: 3rem;
-        background: url(../images/sky.jpg);
+        /* background: url(../images/sky.jpg); */
         background-size: cover;
         position: fixed;
         left: 0;
