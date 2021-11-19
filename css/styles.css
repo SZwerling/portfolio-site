@@ -36,11 +36,13 @@ body {
     color: var(--yellow-red);
 }
   .title-main {
-    animation: moveInRight 1s ease-out;
+    opacity: 0;
+    animation: moveInRight 2s ease-out 1s forwards;
   }
 
   .title-sub {
-    animation: moveInLeft 1s ease-out;
+    opacity: 0;
+    animation: moveInLeft 2s ease-out 1s forwards;
   }
 
   .parent {
@@ -85,12 +87,12 @@ body {
 
   
 
-.intro-left{
+/* .intro-left{
         background: url(../images/sky.jpg);
         background-size: cover;
         color: var(--pale-yellow);
     }
-   
+    */
  
 
 @keyframes moveInLeft {
@@ -117,6 +119,11 @@ body {
 
     80% {
         transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0)
     }
 }
 
