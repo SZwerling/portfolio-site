@@ -17,8 +17,8 @@ Metallic Bronze (#AB7D41)
 }
 
 body {
-   background-color: var(--han-blue);
-   color: whitesmoke;
+   background: linear-gradient(135deg, #386fbd, #a4c5e9);
+   color: #ffffff;
 }
 
 .custom-toggler.navbar-toggler {
@@ -133,15 +133,15 @@ body {
 }
 
 .blockquote-footer {
-   color: whitesmoke;
+   color: #ffffff;
 }
 
 .figcaption {
-   color: whitesmoke;
+   color: #ffffff;
 }
 
 .btn {
-   color: whitesmoke;
+   color: #ffffff;
    margin-bottom: 5px;
 }
 
@@ -182,7 +182,7 @@ body {
       left: 0;
       width: 33.3333%;
       height: 100%;
-      color: white;
+      color: #ffffff;
    }
    .navbar {
       position: fixed;
