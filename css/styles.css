@@ -7,218 +7,194 @@ Maximum Yellow Red (#F8B54C)
 Metallic Bronze (#AB7D41)
 */
 
-
 :root {
---shadow-dark: 1rem 1rem 1.7rem rgba(0, 0, 0, .7);
---pale-yellow: #FDFAC3;
---han-blue: #3870BD;
---bronze: #AB7D41;
---indigo: #13286B;
---yellow-red: #F8B54C;
+   --shadow-dark: 1rem 1rem 1.7rem rgba(0, 0, 0, 0.7);
+   --pale-yellow: #fdfac3;
+   --han-blue: #386fbd;
+   --bronze: #ab7d41;
+   --indigo: #13286b;
+   --yellow-red: #f8b54c;
 }
-
 
 body {
-    background-color: var(--yellow-red);
+   background-color: var(--han-blue);
+   color: whitesmoke;
 }
 
-
-.navbar {
-    background: url(../images/sky.jpg);
-    background-size: cover;
-    color: var(--pale-yellow);
-    text-transform: uppercase;
+.custom-toggler.navbar-toggler {
+    border-color: var(--bronze);
 }
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+ 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(171, 125, 65)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 .jumbotron {
-    /* background: url(../images/sky.jpg); */
-    background-size: cover;
-    color: var(--yellow-red);
+   /* background: url(../images/sky.jpg); */
+   background-size: cover;
+   color: var(--yellow-red);
 }
-  .title-main {
-    opacity: 0;
-    animation: moveInRight 2s ease-out 1s forwards;
-  }
 
-  .title-sub {
-    opacity: 0;
-    animation: moveInLeft 2s ease-out 1s forwards;
-  }
+.title-main {
+   opacity: 0;
+   animation: moveInRight 2s ease-out 1s forwards;
+}
 
-  .parent {
-    font-family: 'Orbitron', sans-serif;
-    backface-visibility: hidden;
-    color: var(--yellow-red)
-  }
+.title-sub {
+   opacity: 0;
+   animation: moveInLeft 2s ease-out 1s forwards;
+}
 
+.parent {
+   font-family: "Orbitron", sans-serif;
+   backface-visibility: hidden;
+   color: var(--yellow-red);
+}
 
 .nav-link::before {
-    content: "";
-    position: absolute; /* positioned in relation to 'parent' __item */
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 3px;
-    background-color: var(--pale-yellow);
-    transform: scaleY(0);
-    transition: transform .2s, 
-                width .4s cubic-bezier(1, 0, 0, 1) .2s,
-                background-color .1s;
-}
-.nav-link:hover::before {
-    transform: scaleY(1);
-    width: 100%;
+   content: "";
+   position: absolute; /* positioned in relation to 'parent' __item */
+   z-index: -1;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 3px;
+   background-color: var(--pale-yellow);
+   transform: scaleY(0);
+   transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+      background-color 0.1s;
 }
 
+.nav-link:hover::before {
+   transform: scaleY(1);
+   width: 100%;
+}
 
 .nav-link:link,
 .nav-link:visited {
-    color: var(--pale-yellow);
-    text-transform: uppercase;
-    position: relative;     
+   color: var(--pale-yellow);
+   text-transform: uppercase;
+   position: relative;
 }
 
-.nav-link:hover{
-    color: var(--bronze);
+.nav-link:hover {
+   color: var(--bronze);
 }
-
-
-
-  
-
-/* .intro-left{
-        background: url(../images/sky.jpg);
-        background-size: cover;
-        color: var(--pale-yellow);
-    }
-    */
- 
 
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
+   0% {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
 
-    80% {
-        transform: translateX(10px);
-    }
+   80% {
+      transform: translateX(10px);
+   }
 
-    100% {
-        opacity: 1;
-        transform: translate(0)
-    }
+   100% {
+      opacity: 1;
+      transform: translate(0);
+   }
 }
 
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
+   0% {
+      opacity: 0;
+      transform: translateX(100px);
+   }
 
-    80% {
-        transform: translateX(-10px);
-    }
+   80% {
+      transform: translateX(-10px);
+   }
 
-    100% {
-        opacity: 1;
-        transform: translate(0)
-    }
+   100% {
+      opacity: 1;
+      transform: translate(0);
+   }
 }
 
 .avatar {
-    width: 10rem;
-    height: 10rem;
-    border: .05rem solid var(--yellow-red);
-    border-radius: 50%;
-    margin: 1rem;
+   width: 10rem;
+   height: 10rem;
+   border: 0.05rem solid var(--yellow-red);
+   border-radius: 50%;
+   margin: 1rem;
 }
 
 .full-height {
-    height: 100%;
+   height: 100%;
 }
 
 .quote {
-    float: right;
+   float: right;
 }
+
 .blockquote-footer {
-    color: var(--indigo) !important;
+   color: whitesmoke;
 }
 
 .figcaption {
-    color: var(--yellow-red)
+   color: whitesmoke;
 }
-
-
-
 
 .btn {
-    color: var(--bronze) !important;
-    background-color: var(--pale-yellow) !important;
-    border-color: var(--indigo);
-    border-radius: 100px;
-    margin-bottom: 5px;
-}
-.btn:active{
-    background-color: var(--bronze) !important;
-}
-  .background {
-    background-color:  var(--han-blue);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: fixed;
-    clip-path: polygon(100% 0, 6% 0, 31% 100%, 0 32%, 65% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 46%, 52% 0, 28% 6%);
-  }
-
-  .img-container {
-    box-shadow: var(--shadow-dark);
-    transition: all 1s;
-  }
-
-  /*1rem 1rem 1.7rem rgba(0, 0, 0, .7); initial state */
-  .project-link:hover { 
-    transform: translateY(-3px);  /* moves up on hover*/
-    /* offset-x | offset-y | blur-radius | *no spread-radius | color */
-    box-shadow: 1.5rem 1.5rem 2.2rem rgba(0, 0, 0, .65);  /*shadow grows on hover*/
-    transition: all .5s;    
-  }
-  .project-link:active {
- /*when clicked*/
-        transform: translateY(-0.1rem);/*lower than hover, lower than initial state */
-        box-shadow: 0rem 0rem 1.2rem rgba(.5, .5, .5, 1);  /*shadow decreases from hover*/
-        transition: all .1s;
-  }
-
-
-  /* clip-path: polygon(36% 0, 95% 0, 65% 100%, 18% 100%); */
-
-  @media (min-width: 768px){
-    .jumbotron {
-        padding-top: 3rem;
-        /* background: url(../images/sky.jpg); */
-        background-size: cover;
-        position: fixed;
-        left: 0;
-        width: 33.3333%;
-        height: 100%;
-        color: white;
-    } 
-    .navbar {
-        position: fixed;
-        display: flex;
-        align-items: baseline;
-        width: 33.3333%;
-        height: 25%;
-        top: 25rem; 
-        background: none;
-       
-    }
-    .links  {
-        display: flex;
-        flex-direction: column;
-    }
+   color: whitesmoke;
+   margin-bottom: 5px;
 }
 
+.btn:hover {
+   color: var(--bronze);
+}
 
+.btn:active {
+   background-color: var(--bronze) !important;
+}
+
+.img-container {
+   box-shadow: var(--shadow-dark);
+   transition: all 1s;
+}
+
+/*1rem 1rem 1.7rem rgba(0, 0, 0, .7); initial state */
+.project-link:hover {
+   transform: translateY(-3px); /* moves up on hover*/
+   /* offset-x | offset-y | blur-radius | *no spread-radius | color */
+   box-shadow: 1.5rem 1.5rem 2.2rem rgba(0, 0, 0, 0.65); /*shadow grows on hover*/
+   transition: all 0.5s;
+}
+.project-link:active {
+   /*when clicked*/
+   transform: translateY(
+      -0.1rem
+   ); /*lower than hover, lower than initial state */
+   box-shadow: 0rem 0rem 1.2rem rgba(0.5, 0.5, 0.5, 1); /*shadow decreases from hover*/
+   transition: all 0.1s;
+}
+
+@media (min-width: 768px) {
+   .jumbotron {
+      padding-top: 3rem;
+      background-size: cover;
+      position: fixed;
+      left: 0;
+      width: 33.3333%;
+      height: 100%;
+      color: white;
+   }
+   .navbar {
+      position: fixed;
+      display: flex;
+      align-items: baseline;
+      width: 33.3333%;
+      height: 25%;
+      top: 25rem;
+      background: none;
+   }
+   /* .links {
+      display: flex !important;
+      flex-direction: column !important;
+   } */
+}
