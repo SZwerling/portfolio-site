@@ -14,6 +14,7 @@ Metallic Bronze (#AB7D41)
    --bronze: #ab7d41;
    --indigo: #13286b;
    --yellow-red: #f8b54c;
+   --glossy-black: rgb(0, 0, 0);
 }
 
 body {
@@ -33,7 +34,7 @@ body {
 
 
 .jumbotron {
-   background-size: cover;
+   background-color: var(--glossy-black);
    color: var(--yellow-red);
 }
 
