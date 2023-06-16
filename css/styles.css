@@ -34,9 +34,16 @@ body {
 
 
 .jumbotron {
-   background-color: var(--glossy-black);
+   background: #000 url("../images/stars.png") repeat top center;
    color: var(--yellow-red);
 }
+
+.twinkling {
+   background: transparent url("../images/twinkling.png") repeat top center;
+   z-index: 1;
+   animation: make-twinkly-stars 200s linear infinite;
+}
+
 
 .title-main {
    opacity: 0;
@@ -114,6 +121,11 @@ body {
       opacity: 1;
       transform: translate(0);
    }
+}
+
+@keyframes make-twinkly-stars {
+   from {background-position: 0 0;}
+   to {background-position: -10000px 5000px;}
 }
 
 .avatar {
