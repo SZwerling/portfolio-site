@@ -18,8 +18,9 @@ Metallic Bronze (#AB7D41)
 }
 
 body {
-   background: linear-gradient(135deg, #386fbd, #a4c5e9);
+   background-image: linear-gradient(135deg, #386fbd, #a4c5e9);
    color: #ffffff;
+   position: relative;
 }
 
 .custom-toggler.navbar-toggler {
@@ -35,6 +36,7 @@ body {
 
 .jumbotron {
    background: #000 url("../images/stars.png") repeat top center;
+   z-index: -2;
    color: var(--yellow-red);
 }
 
@@ -44,6 +46,17 @@ body {
    animation: make-twinkly-stars 200s linear infinite;
 }
 
+.clouds {
+   background: url('../images/clouds.png') ;
+   position: fixed;
+   top: -40%;
+   left: 0;
+   right: 0;
+   bottom: 0;   
+   z-index: -1;
+   opacity: .8;
+   animation: make-clouds-move 700s linear infinite;
+}
 
 .title-main {
    opacity: 0;
@@ -128,6 +141,11 @@ body {
    to {background-position: -10000px 5000px;}
 }
 
+@keyframes make-clouds-move {
+   from {background-position: 0 0;}
+   to {background-position: -10000px 0;}
+}
+
 .avatar {
    width: 10rem;
    height: 10rem;
@@ -186,6 +204,10 @@ body {
    ); /*lower than hover, lower than initial state */
    box-shadow: 0rem 0rem 1.2rem rgba(0.5, 0.5, 0.5, 1); /*shadow decreases from hover*/
    transition: all 0.1s;
+}
+
+.contact {
+  
 }
 
 @media (min-width: 768px) {
